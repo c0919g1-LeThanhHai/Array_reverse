@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [4,7,2,8,9,5,3];
+    document.write("Mảng cũ là " + arr + "<br>");
+    let first = 0;
+    let last = arr.length -1;
+    while(first < last) {
+        let temp = arr[first];
+        arr[first] = arr[last];
+        arr[last] = temp;
+        first++;
+        last--;
+    }
+    document.write("Mảng sau khi đảo ngược là " + arr);
+</script>
+</body>
+</html>
